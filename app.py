@@ -38,14 +38,14 @@ if st.button("Visualizar Datos de Vehículos Usados"):
     bar_data = vehicles_df.groupby('type')['price'].mean().reset_index()
     bar_traces = px.bar(bar_data, x='type', y='price', color='type').data
     for trace in bar_traces:
-        fig.add_trace(trace, row=2, col=1)
+        fig.add_trace(trace, row=2, col=2)
 
     # Líneas (precio promedio por año)
     line_data = vehicles_df.groupby('model_year')['price'].mean().reset_index()
     line_traces = px.line(line_data, x='model_year',
                           y='price', color_discrete_sequence=['darkgreen']).data
     for trace in line_traces:
-        fig.add_trace(trace, row=2, col=2)
+        fig.add_trace(trace, row=2, col=1)
 
     # Etiquetas de ejes
     fig.update_xaxes(title_text="Precio (USD)", row=1, col=1)

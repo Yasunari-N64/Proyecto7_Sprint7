@@ -1,6 +1,8 @@
 # Proyecto7_Sprint7
 Repositorio para almacenar el Proyecto 7 (Sprint 7 de Tripleten)
 
+URL de render: https://proyecto7-sprint7.onrender.com
+
 app.py:
 Esta es una aplicación (app) que permite visualizar datos de interés, de un dataframe de vehículos usados, en cuantro gráficos distintos:
 - Histograma del Precio de los vehículos.
